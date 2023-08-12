@@ -1,0 +1,61 @@
+/* font-family: 'Handjet', cursive; */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #1f2421;
+    color: #dce1de;
+    font-family: 'Handjet', cursive;
+}
+
+header {
+    height: 35vh;
+    border: 3px solid red;
+    position: relative;
+}
+
+main {
+    height: 65vh;
+    border: 5px solid green;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.left {
+    border: 1px solid pink;
+    width: 52rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.right {
+    border: 1px solid blue;
+    width: 52rem;
+    font-size: 2rem;
+}
+
+h1 {
+    font-size: 4rem;
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    top: 52%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+
+
+
