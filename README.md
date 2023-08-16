@@ -11,3 +11,4 @@ https://mariam-levy.github.io/guess-my-number/
 ## Credits ✒️
 Jonas Schmedtmann : https://www.udemy.com/course/the-complete-javascript-course/
 
+![image](https://github.com/Mariam-Levy/guess-my-number/assets/80288291/b40031eb-55fd-4d2b-aa35-e9008ef3e0b9)
