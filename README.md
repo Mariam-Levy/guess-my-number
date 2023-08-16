@@ -5,7 +5,7 @@
 ## Used technology 🛠️
 [![My Skills](https://skillicons.dev/icons?i=html,css,js)](https://skillicons.dev)
 
-## Preview
+## Preview 
 https://mariam-levy.github.io/guess-my-number/
 
 ## Credits ✒️
