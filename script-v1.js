@@ -17,10 +17,10 @@ document.querySelector('.check').addEventListener('click', function() {
 
 
     if(!guess) {  //cuando el ususario no ingreso un numero
-        displayMessage('No Number! ❌');
+        displayMessage('No es un numero! ❌');
 
     } else if (guess === secretNumber) { //cuando el usuario introdujo el numero correcto.
-        displayMessage('Correct Number! ✅'); // arroja el mensaje que el usuario atino el numero
+        displayMessage('Numero correcto! ✅'); // arroja el mensaje que el usuario atino el numero
         document.querySelector('.number').textContent = secretNumber; //muestra el numero secreto solo cuando sea el correcto.
 
         //Manipular CSS desde JS:
@@ -39,7 +39,7 @@ document.querySelector('.check').addEventListener('click', function() {
             document.querySelector('.score').textContent = score; // muestra el nuevo valor del score
         } else {
             /* document.querySelector('.message').textContent = 'You lost the game 😫';  */
-            displayMessage('You lost the game 😫')
+            displayMessage('Perdiste el juego 😫')
             document.querySelector('.score').textContent = 0; // para que el puntaje se muestre en 0, cuando se pierde el juego
             document.querySelector('body').style.backgroundColor = '#d00000'; 
         }
@@ -51,7 +51,7 @@ document.querySelector('.check').addEventListener('click', function() {
 document.querySelector('.again').addEventListener('click', function() {
     score = 20;
     secretNumber = Math.trunc(Math.random() * 20) + 1; 
-    displayMessage('Start guessing...');
+    displayMessage('Empieza a adivinar...');
     document.querySelector('.score').textContent = score;
     document.querySelector('.number').textContent = '?'
     document.querySelector('.guess').value = '';
