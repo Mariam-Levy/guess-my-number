@@ -34,11 +34,10 @@ document.querySelector('.check').addEventListener('click', function() {
 
     } else if (guess !== secretNumber) { // cuando el numero es diferente al numero secreto
         if(score > 1) {
-            displayMessage(guess > secretNumber ? 'too high! ⬆' : 'too low! ⬇'); // cuando el numero introducido es mayor al numero secreto entonces sale el mensaje que el numero es muy alto, de lo contrario muesta el mensaje que el numero es muy bajo.
+            displayMessage(guess > secretNumber ? 'Muy alto! ⬆' : 'Muy bajo! ⬇'); // cuando el numero introducido es mayor al numero secreto entonces sale el mensaje que el numero es muy alto, de lo contrario muesta el mensaje que el numero es muy bajo.
             score = score - 1; // resta un punto del score
             document.querySelector('.score').textContent = score; // muestra el nuevo valor del score
         } else {
-            /* document.querySelector('.message').textContent = 'You lost the game 😫';  */
             displayMessage('Perdiste el juego 😫')
             document.querySelector('.score').textContent = 0; // para que el puntaje se muestre en 0, cuando se pierde el juego
             document.querySelector('body').style.backgroundColor = '#d00000'; 
